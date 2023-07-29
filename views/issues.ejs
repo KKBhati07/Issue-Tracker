@@ -1,0 +1,58 @@
+<!-- linking CSS file -->
+<link rel="stylesheet" href="/css/issues.css">
+
+<!-- ISSUES PAGE OF THE APP -->
+<main>
+
+    <!-- MAIN CONTAINER -->
+    <section class="main-container">
+        <div class="heading-edit-btn-container">
+            <!-- name of he project -->
+            <h2>
+                <%= project.name %>
+            </h2>
+            <img id="open-search-container" class="on-hover" src="/images/icons/search.png" alt="search button">
+            <img id="project-edit-button" class="on-hover" src="/images/icons/edit-white.png" alt="edit button">
+    
+        </div>
+        <!-- description of the project -->
+        <div class="description" id="description" data-id="<%= project.id  %>">
+            <p>
+                <%= project.description %>
+            </p>
+        </div>
+        <!-- to search an issue  -->
+        <div class="search-container" id="search-container">
+            <input class="button-hover" type="text" id="search-by-text" placeholder="Type here.."> <br>
+            <img src="/images/icons/close-white.png" alt="close button" class="close-search-btn" id="close-search-btn">
+            <p>Search By Tags</p>
+            <input  id="checkbox-bug" class="checkbox button-hover" type="checkbox"> Bug
+            <input id="checkbox-ui" type="checkbox" class="checkbox button-hover"> UI
+            <input class="checkbox button hover" id="checkbox-duplicates" type="checkbox"> Duplicates
+            <input id="checkbox-documentation" class="checkbox button-hover" type="checkbox"> Documentation
+        </div>
+        <div class="items-container" id="items-container">
+
+            <!-- ISSUES LIST WILL BE RENDERED USING JAVASCRIPT -->
+    
+        </div>
+    
+    </section>
+    <aside>
+        <!-- including this to show create issue form -->
+        <%-include("_create_issue_form")  %>
+        
+        
+        
+    </aside>
+    
+    <!-- to display details of a issue -->
+    
+    <!-- including this to show issue details -->
+    <%-include("_issue_details")  %>
+
+    <!-- including to render edit project form on DOM  -->
+    <%-include("_edit_project_form")  %>
+</main>
+
+<script type="text/javascript" src="/js/issues.js"></script>

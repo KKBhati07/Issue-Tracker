@@ -1,0 +1,71 @@
+/* Declaring variables to root */
+:root {
+    --fontColor: rgb(255, 255, 255);
+    --fontFamily: Franklin Gothic Medium;
+    --itemColor: rgb(233, 233, 233);
+    --headerColor: rgb(255, 102, 0);
+    --backgroundColor: rgb(128, 128, 128);
+    --borderColor: rgb(255, 255, 255);
+    --headLabelColor:rgba(255, 102, 0);
+    --formColor:rgb(255, 156, 89);
+    --buttonColor:rgb(255, 102, 0);
+    --successNotifyColor:rgb(116, 115, 115);
+    --errorNotifyColor:rgb(231, 87, 79);
+}
+
+/* STYLING NOTIFICATIONS */
+
+#toast-container>div.toast {
+    opacity: 1;
+  }
+
+  .toast-success {
+      background-color: var(--successNotifyColor);
+    }
+
+    .toast-error{
+        background-color: var(--errorNotifyColor);
+
+  }
+
+
+
+  /* SETTING ROOT PROPERTIES */
+
+*::-webkit-scrollbar{
+    width:0;
+}
+
+*{
+    color: var(--fontColor);
+    margin: 0;
+    padding: 0;
+    /* for Mozilla Firefox */
+    scrollbar-width: 0;
+    cursor: context-menu;
+    box-sizing: border-box;
+    font-family: var(--fontFamily);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    overflow-x: hidden;
+    background-color: var(--backgroundColor);
+}
+
+/* declaring hover classes */
+.on-hover:hover {
+    scale: 1.1;
+}
+
+.on-hover {
+    transition: all 0.3s ease-in-out;
+}
+
+.button-hover:hover{
+    filter: brightness(0.9);
+}

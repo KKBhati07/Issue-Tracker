@@ -1,0 +1,24 @@
+<!-- for CSS file -->
+<link rel="stylesheet" href="/css/create_issue_form.css">
+
+
+<!-- CREATE ISSUE FORM -->
+<div class="form-container" id="form-container">
+    <p>Create Issue</p>
+    <form id="add-issue-form" action="/projects/create" method="post">
+        <input class="issue-input button-hover" required type="text" name="title" placeholder="Name the issue">
+        <input class="issue-input button-hover" required type="text" name="author" placeholder="Author name">
+        <textarea class="issue-description-input button-hover" rows="5" type="text" name="description"
+            placeholder="Describe your issue.."></textarea>
+        <p>Labels: </p>
+        <div class="labels-container">
+
+            <input class="button-hover" type="checkbox" name="labels" value="Bug">  Bug
+            <input class="button-hover" type="checkbox" name="labels" value="UI">  UI
+            <input class="button-hover" type="checkbox" name="labels" value="Duplicates">  Duplicates
+            <input class="button-hover" type="checkbox" name="labels" value="Documentation">  Documentation
+        </div>
+        <input type="text" name="project" value="<%= project.id  %>" hidden>
+        <button type="submit" class="submit-btn button-hover">ADD</button>
+    </form>
+</div>

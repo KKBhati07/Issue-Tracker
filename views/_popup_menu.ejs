@@ -1,0 +1,31 @@
+<!-- linking css for styles -->
+<link rel="stylesheet" href="/css/popup_menu.css">
+
+<!-- POPUP MENU -->
+<div class="menu-container" id="menu-container">
+    <div class="menu-content">
+        <div class="heading-container">
+
+            <h2 class="on-hover-icon menu-heading">ISSUE TRACKER</h2>
+            <div id="close-popup-menu-btn">
+              <p class="close-popup-menu-btn" id="close-popup-menu-btn">X</p>
+
+            </div>
+        </div>
+      <ul class="list">
+        <li><h2 class="margin-left on-hover-icon" id="projects-count">Total Projects: <%= numProjects %></h2></li>
+        <% try{ %>
+          <!-- to show the number of issues -->
+          <% if(numIssues){ %>
+
+            <li><h2 class="margin-left on-hover-icon" id="issues-count">Issues: <%= numIssues || 0 %></h2></li>
+            <% } %>
+
+          <% }catch(error){} %>
+   
+      </ul>
+    </div>
+  </div>
+
+  <!-- adding javascript file for functionality -->
+  <script type="text/javascript" src="/js/menu.js"></script>

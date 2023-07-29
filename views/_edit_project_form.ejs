@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/css/edit_project_form.css">
+
+<!-- EDIT PROJECT FORM -->
+<div class="popup-container" id="edit-project-from-container">
+    <div class="project-edit-form" id="edit-project-form-container">
+        <img src="/images/icons/close-white.png" alt="close button" id="close-edit-project-btn">
+        <form action="/projects/update/<%= project._id %>" method="post">
+            
+            <p>Name</p>
+            <input class="button-hover" type="text" name="name" required value="<%= project.name %>">
+            <p>Author</p>
+            <input class="button-hover" type="text" name="author" required value="<%= project.author %>">
+            <p>Description</p>
+            <textarea class="button-hover" id="" name="description" cols="30" rows="6"><%= project.description %></textarea>
+            <input class="button-hover" type="submit" name="" id="edit-project-submit-button" value="SUBMIT">
+        
+        </form>
+        
+    </div>
+</div>

@@ -1,0 +1,44 @@
+/* EDIT PROJECT FORM */
+.project-edit-form{
+    padding: 2%;
+    border-radius: 5px;
+    height: 60vh;
+    text-align: center;
+    width: 30vw;
+    position: relative;
+    background-color: var(--backgroundColor);
+    border: var(--borderColor) solid 2px;
+}
+
+.project-edit-form>img{
+    position: absolute;
+    right:1%;
+    top: 1%;
+    width: 40px;
+}
+
+.project-edit-form input{
+    color: black !important;
+    background-color: var(--itemColor);
+    width: 95%;
+    height: 5vh;
+    border-radius: 5px;
+    border: 2px solid var(--borderColor);
+    outline: none;
+    color: rgb(236, 69, 69) ;
+    font-size: 1.01rem;
+}
+
+.project-edit-form textarea{
+    color: black !important;
+    background-color: var(--itemColor);
+    border: 2px solid var(--borderColor);
+    border-radius: 5px;
+    width: 95%;
+    height: 25vh;
+}
+
+#edit-project-submit-button{
+    background-color: var(--buttonColor);
+    color: var(--fontColor) !important;
+}

@@ -1,0 +1,174 @@
+/* HOME PAGE */
+
+/* ====main container==== */
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+}
+
+/* heading label */
+.projects-heading {
+    color: var(--fontColor);
+    background-color: var(--headLabelColor);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: 2vh;
+    width: 40vw;
+    height: 10vh;
+    position: relative;
+    border: 2px solid var(--borderColor);
+}
+
+.projects-heading>h2 {
+    margin-left: 1vw;
+}
+
+
+.add-project {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: none;
+    background-image: none;
+    right: 1vw;
+    transition: transform 0.5s ease-in-out;
+}
+
+.add-project>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+/* ========form to create new projects========= */
+
+.form-container {
+    transition: height 1s ease;
+    display: flex;
+    color: black !important;
+    flex-direction: column;
+    width: 40vw;
+    height: 0vh;
+    background-color: var(--formColor);
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 1vh;
+}
+
+#add-project-form {
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    margin: 2vh;
+    position: relative;
+}
+
+#add-project-form>input {
+    background-color: var(--itemColor);
+    font-size: 1.01rem;
+    border-radius: 10px;
+    border: 2px solid var(--borderColor);
+    width: 48%;
+    color: black !important;
+    height: 5vh;
+    outline: none;
+    position: relative;
+    position: relative;
+}
+
+
+#add-project-form>textarea {
+    background-color: var(--itemColor);
+    display: block;
+    font-size: 1.01rem;
+    color: black !important;
+    padding: 1%;
+    border-radius: 10px;
+    margin-top: 1%;
+    position: relative;
+    border: 2px solid var(--borderColor);
+    width: 90%;
+    height: 18vh;
+    outline: none;
+}
+
+#add-project-form>button {
+    border: 2px solid var(--borderColor);
+    border-radius: 3px;
+    width: 10%;
+    height: 15%;
+    font-weight: 600;
+    position: absolute;
+    right: -1%;
+    background-color: var(--buttonColor);
+    bottom: 1%;
+    margin-left: 1%;
+    outline: none;
+}
+
+
+
+
+/* =========rendering projects=========== */
+
+.items-container {
+    transition: height 1s ease;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 1vh;
+    position: relative;
+    width: 45%;
+    height: 80vh;
+    flex-wrap: unset;
+    overflow: scroll;
+}
+
+.item-container {
+    overflow: hidden;
+    margin-top: 1%;
+    vertical-align: middle;
+    background-color: var(--itemColor);
+    display: inline-block;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    align-items: center;
+    width: 40vw;
+    height: 10vh;
+    border: 2px var(--borderColor) solid;
+    border-radius: 10px;
+}
+
+.project-author-name-container {
+    height: 100%;
+    position: relative;
+    margin-left: 1vw;
+}
+
+#project-name {
+    position: relative;
+    color: black;
+}
+
+.author-name {
+    position: relative;
+    color: black;
+    top: 10%;
+}
+
+.author-name>small {
+    color: grey;
+}
+
+.delete-btn {
+    width: 30px;
+    margin-right: 1vw;
+}

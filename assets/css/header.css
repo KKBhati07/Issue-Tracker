@@ -1,0 +1,31 @@
+/* HEADER OF THE APP */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--headerColor);
+    border-bottom: 2px solid var(--borderColor);
+}
+
+header>a{
+    text-decoration: none;
+}
+
+.heading-logo-container{
+    margin-left: 1vw;
+    display: flex;
+    align-items: center;
+}
+.heading-logo-container>img{
+    width: 40px;
+}
+.heading-logo-container>h1{
+    margin-left: 1vw;
+    color: var(--fontColor);
+}
+header>img{
+    width: 40px;
+    margin-right: 1vw;
+}

@@ -1,0 +1,39 @@
+<!-- including the CSS file -->
+<link rel="stylesheet" href="/css/home.css">
+
+<!-- HOME PAGE OF THE APP -->
+<main>
+    <div class="projects-heading">
+        <h2>PROJECTS</h2>
+        <div class="add-project" id="add-project">
+
+            <img id="add-project" src="/images/icons/add-white.png" alt="">
+        </div>
+    </div>
+
+    <!-- FORM  TO CREATE NEW PROJECT -->
+    <div class="form-container" id="form-container">
+        <form id="add-project-form" action="/projects/create" method="post" >
+            <input class="button-hover" required type="text" name="name" placeholder="Name the project">
+            <input class="button-hover" required type="text" name="author" placeholder="Author name">
+            <textarea class="button-hover" class="description" rows="5" type="text" name="description"
+                placeholder="Describe your project.."></textarea>
+            <button class="button-hover" type="submit">ADD</button>
+        </form>
+    </div>
+
+    <!-- container to list all the projects -->
+    <div class="items-container" id="items-container">
+
+            <!-- PROJECTS LIST WILL BE RENDERED USING JAVASCRIPT -->
+    </div>
+
+    
+
+
+
+
+</main>
+
+<!-- including the javascript file -->
+<script type="text/javascript" src="/js/home.js"></script>

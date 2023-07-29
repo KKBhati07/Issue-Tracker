@@ -1,0 +1,67 @@
+/* FOR THE ISSUE FORM */
+
+.form-container{
+    top: 5%;
+    position: absolute;
+    border-left: 2px solid var(--borderColor);
+}
+
+.form-container>p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    position: relative;
+    left: 1vw;
+}
+
+.issue-input{
+    position: relative;
+    left: 1vw;
+    background-color: var(--itemColor);
+    font-size: 1.1rem;
+    width:30vw;
+    height:7vh;
+    color: black !important;
+    padding: 2vh;
+    border: 2px solid var(--borderColor);
+    border-radius: 10px;
+    margin-top: 2vh;
+    
+}
+
+.issue-description-input{
+    background-color: var(--itemColor);
+    /* color: var(--fontColor); */
+    color: black !important;
+    font-size: 1.1rem;
+    padding: 2vh;
+    display: block;
+    width:30vw;
+    height:30vh;
+    border: 2px solid var(--borderColor);
+    border-radius: 10px;
+    margin-top: 2vh;
+    position: relative;
+    left: 1vw;
+    
+}
+
+.labels-container{
+    position: relative;
+    left: 1vw;
+}
+.submit-btn{
+    background-color: var(--buttonColor);
+    width: 30vw;
+    margin-top: 4vh;
+    border: 2px solid var(--borderColor);
+    display: block;
+    border-radius: 5px;
+    height: 5vh;
+     position: relative;
+     left: 1vw;
+}
+.form-container p{
+    position: relative;
+    left: 1vw;
+    margin-top: 2vh;
+}

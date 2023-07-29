@@ -1,0 +1,52 @@
+/* ISSUE DETAILS POPUP */
+.popup-container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+
+.issue-details{
+    border-radius:10px;
+    position: relative;
+    width: 55vw;
+    height: 60vh;
+    border: 2px solid var(--borderColor);
+    background-color: var(--backgroundColor);
+}
+
+.issue-details>h2{
+    margin-top: 2%;
+    margin-left: 2%;
+    color: var(--fontColor);
+}
+
+.issue-details>div{
+    margin-top: 5%;
+    left: 1%;
+    height: 30vh;
+    overflow: scroll;
+    border: 2px solid var(--borderColor);
+    border-radius: 5px;
+    position: relative;
+    width: 98%;
+}
+
+.issue-details>img{
+    position: absolute;
+    right:1%;
+    top: 1%;
+    width: 40px;
+}
+
+.issue-details>p{
+    margin-left: 1%;
+    margin-top: 5%;
+    font-size: 1.2rem;
+}
