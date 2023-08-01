@@ -18,13 +18,16 @@ header>a{
     display: flex;
     align-items: center;
 }
+
 .heading-logo-container>img{
     width: 40px;
 }
+
 .heading-logo-container>h1{
     margin-left: 1vw;
     color: var(--fontColor);
 }
+
 header>img{
     width: 40px;
     margin-right: 1vw;

@@ -28,7 +28,6 @@ module.exports.fetchAll = async (req, res) => {
         }
         //if something else goes wrong
     } catch (error) {
-        console.log(error);
         return res.status(500).json({
             message: "Internal Server Error"
         });
@@ -66,7 +65,6 @@ module.exports.create = async (req, res) => {
 
 
     } catch (error) {
-        console.log(error);
         return res.status(500).json({
             message: "Unable to create issue"
         });
@@ -100,7 +98,6 @@ module.exports.destroy = async (req, res) => {
         }
         return res.redirect("back")
     } catch (error) {
-        console.log(error);
         return res.status(500).json({ message: "Internal server error" })
     }
 }

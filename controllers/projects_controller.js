@@ -23,7 +23,6 @@ module.exports.fetchAll = async (req, res) => {
         return res.redirect("back");
         //if something else goes wrong
     } catch (error) {
-        console.log(error);
         res.status(500).json({ message: "Internal Server Error" });
         return res.redirect("back");
     }
@@ -49,7 +48,6 @@ module.exports.create = async (req, res) => {
         return res.redirect("back");
         //if something else goes wrong
     } catch (error) {
-        console.log(error);
         res.status(500).json({ message: "Internal server error" });
         //if not a ajax request, redirect back to the home page
         return res.redirect("back");
@@ -76,7 +74,6 @@ module.exports.destroy = async (req, res) => {
         return res.redirect("back")
         //if something else goes wrong
     } catch (error) {
-        console.log(error);
         return res.status(500).json({ message: "Internal server error" })
     }
 
@@ -92,7 +89,6 @@ module.exports.update = async (req, res) => {
 
         //is anything goes wrong
     } catch (error) {
-        console.log(error);
         return res.redirect("back");
 
     }
@@ -117,7 +113,6 @@ module.exports.issues = async (req, res) => {
 
         //if something goes wrong
     } catch (error) {
-        console.log(error);
         return res.send("<h1>Page Not Found</h1>");
 
     }

@@ -19,7 +19,6 @@ module.exports.create = async (req, res) => {
 
         // if something else goes wrong
     } catch (error) {
-        console.log("Error creating a project", error);
         return res.status(500).json({
             message: "Internal Server Error"
         });
@@ -47,7 +46,6 @@ module.exports.fetchAll = async (req, res) => {
         });
         // if something else goes wrong
     } catch (error) {
-        console.log("Error fetching projects", error);
         return res.status(500).json({
             message: "Internal server error"
         });
@@ -72,7 +70,6 @@ module.exports.fetchOne = async (req, res) => {
 
         // if something else goes wrong
     } catch (error) {
-        console.log("Error fetching project", error);
         return res.status(500).json({
             message: "Internal server error"
         });
@@ -99,7 +96,6 @@ module.exports.destroy = async (req, res) => {
 
         // if something else goes wrong
     } catch (error) {
-        console.log("Error deleting project", error);
         return res.status(500).json({
             message: "Internal server error"
         });
@@ -127,7 +123,6 @@ module.exports.update = async (req, res) => {
 
         // if something else goes wrong
     } catch (error) {
-        console.log("Error updating project", error);
         return res.status(500).json({
             message: "Internal server error"
         });

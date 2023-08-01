@@ -18,7 +18,6 @@ module.exports.fetchAll = async (req, res) => {
         });
         //if something else goes wrong
     } catch (error) {
-        console.log(error);
         return res.status(500).json({ message: "Internal server error" });
     }
 
@@ -39,7 +38,6 @@ module.exports.fetchOne = async (req, res) => {
         });
 
     } catch (error) {
-        console.log(error);
         return res.status(500).json({ message: "Internal server error" });
     }
 }
@@ -67,7 +65,6 @@ module.exports.create = async (req, res) => {
         });
         //if error
     } catch (error) {
-        console.log(error);
         return res.status(500).json({ message: "Internal server error" });
     }
 }
@@ -94,7 +91,6 @@ module.exports.destroy = async (req, res) => {
         });
 
     } catch (error) {
-        console.log(error);
         return res.status(500).json({ message: "Internal server error" });
     }
 }
@@ -119,7 +115,6 @@ module.exports.update = async (req, res) => {
 
         // if something else goes wrong
     } catch (error) {
-        console.log(error);
         return res.status(500).json({ message: "Internal server error" });
     }
 }

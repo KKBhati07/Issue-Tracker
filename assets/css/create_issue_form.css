@@ -30,7 +30,6 @@
 
 .issue-description-input{
     background-color: var(--itemColor);
-    /* color: var(--fontColor); */
     color: black !important;
     font-size: 1.1rem;
     padding: 2vh;
@@ -42,13 +41,13 @@
     margin-top: 2vh;
     position: relative;
     left: 1vw;
-    
 }
 
 .labels-container{
     position: relative;
     left: 1vw;
 }
+
 .submit-btn{
     background-color: var(--buttonColor);
     width: 30vw;
@@ -60,6 +59,7 @@
      position: relative;
      left: 1vw;
 }
+
 .form-container p{
     position: relative;
     left: 1vw;
