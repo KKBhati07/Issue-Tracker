@@ -1,4 +1,6 @@
+//importing issue and project model
 const Project = require("../models/project");
+const Issue = require("../models/issue");
 
 
 //to fetch all the projects in the database
@@ -57,8 +59,10 @@ module.exports.create = async (req, res) => {
 
 // to delete a project from the database
 module.exports.destroy = async (req, res) => {
+
     try {
         const project = await Project.findByIdAndDelete(req.params.id);
+        await Issue.deleteMany({project: req.params.id});
         if (req.xhr) {
             // if deleted successfully
             if (project) {

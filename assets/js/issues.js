@@ -40,6 +40,10 @@
         searchContainer.style.padding = "0vh";
         $(".heading-edit-btn-container").css("height", "10%");
         itemsContainer.css("height", "58vh");
+        //to render all the issues when search is disabled
+        itemsContainer.html("");
+        renderItems(issueArray);
+
     }
 
     //ON LOAD FUNCTION

@@ -1,5 +1,6 @@
-// importing projects model
+// importing project and issue model
 const Project = require("../../../models/project");
+const Issue = require("../../../models/issue");
 
 //to add a project into the database
 module.exports.create = async (req, res) => {
@@ -83,6 +84,7 @@ module.exports.destroy = async (req, res) => {
         const deletedProject = await Project.findByIdAndDelete(req.params.id);
         // if deleted successfully
         if (deletedProject) {
+            await Issue.deleteMany({project: req.params.id});
             return res.status(200).json({
                 data: deletedProject,
                 message: "Project deleted successfully"
